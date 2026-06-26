@@ -1,0 +1,903 @@
+
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Atanasiu Ivannoel R.A. | Jasa Pembuatan Aplikasi Mobile & Web Otomatisasi Sidoarjo</title>
+    <meta name="title" content="Atanasiu Ivannoel R.A. | Jasa Pembuatan Aplikasi Mobile & Web Otomatisasi Sidoarjo">
+    <meta name="description" content="Ubah ide bisnis Anda menjadi aplikasi mobile & web yang bekerja otomatis 24/7. Spesialis integrasi WhatsApp API & sistem tanpa celah di Sidoarjo. Hubungi sekarang!">
+    <meta name="keywords" content="Atanasiu Ivannoel Rio Aji, Jasa Pembuatan Aplikasi Sidoarjo, Jasa Web Otomatisasi, Flutter Developer Indonesia, Integrasi WhatsApp API Bisnis, Programmer Murah Sidoarjo, Pembuat Sistem Kantor">
+    <meta name="author" content="Atanasiu Ivannoel Rio Aji">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Indonesian">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://atanasiu-portfolio.vercel.app/">
+    <meta property="og:title" content="Ubah Ide Bisnis Anda Menjadi Aplikasi Mobile & Web Otomatis 24/7">
+    <meta property="og:description" content="Spesialis pembuatan sistem kustom dengan fitur pengingat, notifikasi, dan invoice otomatis via WhatsApp. Dapatkan konsultasi gratis!">
+    <meta property="og:image" content="https://placehold.co/1200x630/0f172a/6366f1?text=Atanasiu+Software+Solutions">
+
+    <!-- Google Fonts & Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            card: '#1e293b',
+                            primary: '#6366f1',
+                            secondary: '#10b981',
+                            accent: '#3b82f6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.8; }
+        }
+        .animate-pulse-slow { animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    </style>
+</head>
+<body class="text-slate-100 antialiased overflow-x-hidden">
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#hero" class="text-xl font-extrabold bg-gradient-to-r from-indigo-400 to-emerald-400 bg-clip-text text-transparent hover:opacity-80 transition duration-300">
+                        Atanasiu.dev
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6">
+                        <a href="#about" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Solusi Anda</a>
+                        <a href="#skills" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Teknologi</a>
+                        <a href="#experience" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Portofolio</a>
+                        <a href="#integration-demo" class="text-emerald-400 hover:text-emerald-300 px-3 py-2 rounded-md text-sm font-medium transition duration-300 border border-emerald-500/20 bg-emerald-500/5">Demo WhatsApp</a>
+                        <a href="#contact" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-md shadow-indigo-600/20 transition duration-300">Mulai Konsultasi</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-400 hover:text-white focus:outline-none p-2 rounded-md" aria-label="Toggle Menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-b border-slate-800 px-4 pt-2 pb-4 space-y-1">
+            <a href="#about" class="block text-slate-300 hover:text-white px-3 py-2 rounded-md text-base font-medium">Solusi Anda</a>
+            <a href="#skills" class="block text-slate-300 hover:text-white px-3 py-2 rounded-md text-base font-medium">Teknologi</a>
+            <a href="#experience" class="block text-slate-300 hover:text-white px-3 py-2 rounded-md text-base font-medium">Portofolio</a>
+            <a href="#integration-demo" class="block text-emerald-400 hover:text-emerald-300 px-3 py-2 rounded-md text-base font-medium">Demo WhatsApp</a>
+            <a href="#contact" class="block bg-indigo-600 hover:bg-indigo-500 text-white text-center px-4 py-2 rounded-lg text-base font-medium mt-3">Mulai Konsultasi</a>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden flex items-center min-h-screen">
+        <div class="absolute top-1/4 left-10 w-72 h-72 bg-indigo-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div class="absolute bottom-1/4 right-10 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left: Strong Hook and CTA -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs sm:text-sm font-medium text-emerald-400">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                        Slot Konsultasi Juni 2026 Dibuka (Terbatas!)
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                        Ubah Ide Bisnis Anda <br> Menjadi <span class="bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400 bg-clip-text text-transparent">Sistem Otomatis</span> yang Menghasilkan Uang 24/7
+                    </h1>
+                    
+                    <p class="text-slate-300 text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Hentikan proses kerja manual yang melelahkan. Saya membantu Anda membangun aplikasi <span class="text-indigo-400 font-semibold">Mobile (Flutter)</span> dan <span class="text-indigo-400 font-semibold">Web</span> berkelas industri yang diintegrasikan langsung dengan **Otomatisasi Notifikasi & Reminder WhatsApp** guna mendongkrak retensi customer Anda.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="#contact" class="group bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-indigo-600/30 transition duration-300 flex items-center justify-center gap-2">
+                            Mulai Konsultasi Gratis
+                            <i class="fa-solid fa-calendar-check group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#integration-demo" class="bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white font-medium px-6 py-4 rounded-xl border border-slate-700 transition duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-xl animate-bounce"></i>
+                            Coba Demo Notifikasi WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Custom Value Proposition Widget -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-emerald-500 rounded-2xl blur opacity-30"></div>
+                        <div class="relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+                            <div class="bg-slate-950 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+                                <div class="flex items-center gap-1.5">
+                                    <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+                                    <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                                    <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                                </div>
+                                <span class="text-xs text-slate-400 font-mono">mengapa-harus-otomatis.json</span>
+                            </div>
+                            <div class="p-6 font-mono text-xs sm:text-sm space-y-3.5 text-slate-300">
+                                <div><span class="text-emerald-400">"keuntungan_untuk_bisnis"</span>: {</div>
+                                <div class="pl-4">
+                                    "efisiensi_waktu": <span class="text-amber-300">"Hemat hingga 40 jam kerja/minggu"</span>,
+                                </div>
+                                <div class="pl-4">
+                                    "layanan_pelanggan": <span class="text-amber-300">"Kirim invoice & follow up otomatis"</span>,
+                                </div>
+                                <div class="pl-4">
+                                    "teknologi_digunakan": [<span class="text-emerald-400">"Flutter"</span>, <span class="text-emerald-400">"Fastify"</span>, <span class="text-emerald-400">"WhatsApp API"</span>],
+                                </div>
+                                <div class="pl-4">
+                                    "garansi_sistem": <span class="text-amber-300">"Bebas downtime & performa kilat"</span>
+                                </div>
+                                <div>},</div>
+                                <div class="pt-2">
+                                    <span class="text-slate-500">// Hubungkan alur kerja internal dengan WhatsApp</span>
+                                </div>
+                                <div><span class="text-indigo-400">runOtomatisasiBisnis</span>();</div>
+                                
+                                <div class="pt-4 border-t border-slate-800 flex justify-between items-center text-xs">
+                                    <span class="text-slate-500">Keamanan Server: Terenkripsi</span>
+                                    <span class="text-emerald-400 flex items-center gap-1.5 font-bold">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block animate-pulse"></span>
+                                        Sistem Siap Bangun
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-slate-900/50 border-y border-slate-800/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs sm:text-sm font-semibold tracking-wider text-indigo-400 uppercase">Mengapa Bermitra Dengan Saya?</h2>
+                <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Saya Tidak Sekadar Menulis Kode, Saya Membangun Solusi Pertumbuhan Bisnis</p>
+                <div class="w-12 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-slate-300 leading-relaxed text-lg">
+                        Banyak developer membuat aplikasi yang berakhir ditinggalkan karena sulit digunakan. Sebagai lulusan <strong class="text-white">Sarjana Komputer Universitas Sanata Dharma</strong>, saya mengawinkan dasar ilmu keamanan data dengan tren teknologi tercepat saat ini.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed text-lg">
+                        Kunci sukses bisnis digital terletak pada **interaksi instan**. Melalui keahlian dalam mengintegrasikan sistem backend dengan **WhatsApp notification**, aplikasi yang saya bangun mampu secara mandiri mengirimkan bukti bayar, pengingat janji temu, hingga laporan berkala langsung ke genggaman pelanggan Anda tanpa biaya tambahan bulanan yang membengkak.
+                    </p>
+                    
+                    <!-- Quick Specs Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-center gap-3 bg-slate-900 p-4 rounded-xl border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-lg">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-300">Sistem Kebal Bug</h4>
+                                <p class="text-xs text-slate-400">Maintenance & uji berkala</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-900 p-4 rounded-xl border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-lg">
+                                <i class="fa-solid fa-arrows-spin"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-300">Sidoarjo & Sekitarnya</h4>
+                                <p class="text-xs text-slate-400">Siap meeting online / offline</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pain point solver block -->
+                <div class="bg-gradient-to-br from-slate-900 to-brand-card border border-slate-800 rounded-2xl p-8 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full blur-2xl"></div>
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-line text-emerald-400"></i> Apa yang Bisnis Anda Dapatkan?
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <span class="text-emerald-400 flex-shrink-0 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                            <span class="text-slate-300"><strong class="text-white">Aplikasi Android & iOS Premium (Flutter):</strong> Pengalaman navigasi ultra-mulus yang membuat customer jatuh cinta sejak detik pertama.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-emerald-400 flex-shrink-0 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                            <span class="text-slate-300"><strong class="text-white">Otomatisasi Alur WhatsApp:</strong> Sistem mengirim invoice, validasi tiket, evaluasi tim, dan chat follow-up secara instan tanpa perlu admin mengetik manual.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-emerald-400 flex-shrink-0 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                            <span class="text-slate-300"><strong class="text-white">Arsitektur Backend Super Cepat (Fastify / Node.js):</strong> Menghemat konsumsi server, membuat loading aplikasi 3x lebih cepat dibandingkan CMS instan biasa.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs sm:text-sm font-semibold tracking-wider text-indigo-400 uppercase">Senjata Teknis</h2>
+            <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Teknologi Mutakhir Guna Memastikan Kecepatan & Skalabilitas Aplikasi Anda</p>
+            <div class="w-12 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Programming Languages -->
+            <div class="bg-slate-900 border border-slate-800 hover:border-slate-700 p-6 rounded-2xl transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-xl mb-6">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-4">Efisiensi & Algoritma</h3>
+                <p class="text-slate-400 text-xs mb-4">Pengolahan logika aplikasi yang cerdas memastikan performa maksimal dan hemat baterai di sisi customer.</p>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-slate-300">Dart (Aplikasi Mobile)</span>
+                            <span class="text-indigo-400">Sempurna</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-indigo-500 h-full rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-slate-300">JavaScript (Sistem Web)</span>
+                            <span class="text-indigo-400">Sangat Responsif</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-indigo-500 h-full rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-slate-300">Python (Otomatisasi Data)</span>
+                            <span class="text-indigo-400">Efisien</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-indigo-500 h-full rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="bg-slate-900 border border-slate-800 hover:border-slate-700 p-6 rounded-2xl transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl mb-6">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-4">Framework Kecepatan Tinggi</h3>
+                <p class="text-slate-400 text-xs mb-4">Teknologi premium yang menghemat anggaran pengembangan karena satu kode dapat berjalan di berbagai platform sekaligus.</p>
+                <div class="flex flex-wrap gap-2.5">
+                    <span class="px-3 py-1.5 text-xs font-semibold bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-200 border border-slate-700">Flutter (Android & iOS)</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-200 border border-slate-700">Node.js (Backend)</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-200 border border-slate-700">Fastify.js (Ultra Kilat)</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-200 border border-slate-700">Meteor.js (Real-time)</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-200 border border-slate-700">Express.js</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-200 border border-slate-700">Next.js & Nuxt.js (Web SEO)</span>
+                </div>
+            </div>
+
+            <!-- Databases & Specialized Skills -->
+            <div class="bg-slate-900 border border-slate-800 hover:border-slate-700 p-6 rounded-2xl transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 text-xl mb-6">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-4">Penyimpanan Aman & Terstruktur</h3>
+                <p class="text-slate-400 text-xs mb-4">Skema basis data andal yang menjaga kerahasiaan transaksi, mempercepat query, dan mencegah kebocoran data sensitif.</p>
+                <div class="space-y-4">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1.5 text-xs font-semibold bg-slate-800 rounded-lg text-sky-300 border border-slate-700">PostgreSQL (Keuangan)</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold bg-slate-800 rounded-lg text-sky-300 border border-slate-700">MongoDB (Sistem Cepat)</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold bg-slate-800 rounded-lg text-sky-300 border border-slate-700">SQL Server</span>
+                    </div>
+                    <div class="pt-2 border-t border-slate-800/80">
+                        <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Integrasi Khusus (Best-Seller)</h4>
+                        <div class="space-y-1.5 text-sm text-slate-300">
+                            <div class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp API Automation</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-clock text-indigo-400"></i> Cron Job / Auto-Scheduler</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-plug text-sky-400"></i> Integrasi Payment Gateway & Log</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-slate-900/50 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs sm:text-sm font-semibold tracking-wider text-indigo-400 uppercase">Rekam Jejak & Kepercayaan</h2>
+                <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Menjamin Aplikasi Bebas Masalah Melalui Pengalaman Industri Nyata</p>
+                <div class="w-12 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative max-w-3xl mx-auto">
+                <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-slate-800 transform -translate-x-1/2"></div>
+
+                <!-- Experience Card 1 -->
+                <div class="relative flex flex-col md:flex-row items-stretch mb-12 md:justify-between group">
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-slate-900 border-4 border-slate-800 flex items-center justify-center -translate-x-1/2 z-10 text-emerald-400 group-hover:border-emerald-500 transition-colors">
+                        <i class="fa-solid fa-server text-xs"></i>
+                    </div>
+                    <div class="hidden md:block w-[45%]"></div>
+                    <div class="ml-10 md:ml-0 md:w-[45%] bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-xl hover:border-indigo-500/50 transition-all duration-300">
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-500/10 text-emerald-400 rounded-md">Full-time IT System</span>
+                        <h3 class="text-xl font-bold text-white mt-3">Staff IT</h3>
+                        <p class="text-sm text-indigo-400 font-medium">Institut Yohannes Maria Vianney Surabaya (IMAVI)</p>
+                        <ul class="text-slate-400 text-sm mt-3 space-y-2 list-disc list-inside">
+                            <li>Mengembangkan dan merawat sistem administrasi internal kantor terpadu dari nol.</li>
+                            <li>Menjamin ketersediaan server dengan tingkat uptime 99.9%, meminimalkan risiko kehilangan data sensitif.</li>
+                            <li>Membangun alur otomatisasi pelaporan berbasis web guna memotong waktu birokrasi manual staf administrasi.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Card 2 -->
+                <div class="relative flex flex-col md:flex-row items-stretch mb-12 md:justify-between group">
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-slate-900 border-4 border-slate-800 flex items-center justify-center -translate-x-1/2 z-10 text-emerald-400 group-hover:border-emerald-500 transition-colors">
+                        <i class="fa-solid fa-mobile-screen text-xs"></i>
+                    </div>
+                    <div class="ml-10 md:ml-0 md:w-[45%] bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-xl hover:border-indigo-500/50 transition-all duration-300">
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-indigo-500/10 text-indigo-400 rounded-md">Mobile App Specialist</span>
+                        <h3 class="text-xl font-bold text-white mt-3">Freelance Mobile Developer</h3>
+                        <p class="text-sm text-indigo-400 font-medium">PT Alia</p>
+                        <ul class="text-slate-400 text-sm mt-3 space-y-2 list-disc list-inside">
+                            <li>Merancang dan mendeploy aplikasi mobile lintas platform (Android/iOS) menggunakan Flutter.</li>
+                            <li>Mengoptimalkan loading aset visual untuk performa yang tetap kencang pada ponsel berspesifikasi rendah sekalipun.</li>
+                            <li>Menerjemahkan kebutuhan bisnis korporat menjadi arsitektur UI/UX yang interaktif dan berorientasi peningkatan omset.</li>
+                        </ul>
+                    </div>
+                    <div class="hidden md:block w-[45%]"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-section" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs sm:text-sm font-semibold tracking-wider text-indigo-400 uppercase">Studi Kasus Kesuksesan</h2>
+            <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Sistem yang Telah Terbukti Membantu Klien Menjadi Lebih Efisien</p>
+            <div class="w-12 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="flex justify-center gap-2 mb-10 flex-wrap">
+            <button onclick="filterProjects('all')" class="project-filter-btn px-4 py-2 text-sm font-medium bg-indigo-600 text-white rounded-lg transition">Semua Solusi</button>
+            <button onclick="filterProjects('mobile')" class="project-filter-btn px-4 py-2 text-sm font-medium bg-slate-800 text-slate-300 hover:text-white rounded-lg transition">Mobile App (Flutter)</button>
+            <button onclick="filterProjects('web')" class="project-filter-btn px-4 py-2 text-sm font-medium bg-slate-800 text-slate-300 hover:text-white rounded-lg transition">Web App & Otomatisasi</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Project 1: Evaluasi 360 -->
+            <div class="project-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 shadow-lg" data-category="web">
+                <div class="h-48 bg-gradient-to-br from-indigo-900/60 to-slate-950 flex items-center justify-center border-b border-slate-800 p-6 relative">
+                    <div class="text-center">
+                        <i class="fa-solid fa-users-rectangle text-5xl text-indigo-400 mb-2"></i>
+                        <h4 class="text-sm font-semibold text-slate-400">Efisiensi Evaluasi SDM</h4>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-semibold px-2 py-0.5 bg-indigo-500/15 text-indigo-400 rounded">Web System</span>
+                        <span class="text-xs text-slate-500"><i class="fa-solid fa-lock"></i> IMAVI Internal</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Sistem Penilaian Kerja 360°</h3>
+                    <p class="text-slate-400 text-sm mt-2">
+                        <strong>Masalah:</strong> Evaluasi tim memakan waktu berminggu-minggu dengan formulir kertas.<br>
+                        <strong>Solusi:</strong> Sistem web otomatis mengumpulkan penilaian rekan kerja secara anonim dan menghitung skor kinerja otomatis hanya dalam hitungan detik.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-1.5">
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">Node.js</span>
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">Express</span>
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Keuangan Seminaris -->
+            <div class="project-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 shadow-lg" data-category="mobile">
+                <div class="h-48 bg-gradient-to-br from-emerald-900/60 to-slate-950 flex items-center justify-center border-b border-slate-800 p-6 relative">
+                    <div class="text-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-5xl text-emerald-400 mb-2"></i>
+                        <h4 class="text-sm font-semibold text-slate-400">Keuangan & Pembukuan Kas</h4>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-semibold px-2 py-0.5 bg-emerald-500/15 text-emerald-400 rounded">Mobile App</span>
+                        <span class="text-xs text-emerald-400"><i class="fa-solid fa-bell"></i> SMS/WA Integration</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Aplikasi Pembukuan Instansi Seminari</h3>
+                    <p class="text-slate-400 text-sm mt-2">
+                        <strong>Masalah:</strong> Laporan donasi dan kas acapkali salah input dan sulit direkonsiliasi.<br>
+                        <strong>Solusi:</strong> Aplikasi mobile kas terintegrasi yang mencatat alur masuk-keluar uang secara akurat dan otomatis mengirim rekonsiliasi bulanan ke WhatsApp.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-1.5">
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">Flutter</span>
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">Meteor.js</span>
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Kepegawaian -->
+            <div class="project-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 shadow-lg" data-category="web">
+                <div class="h-48 bg-gradient-to-br from-indigo-900/60 to-slate-950 flex items-center justify-center border-b border-slate-800 p-6 relative">
+                    <div class="text-center">
+                        <i class="fa-solid fa-user-clock text-5xl text-indigo-400 mb-2"></i>
+                        <h4 class="text-sm font-semibold text-slate-400">Otomatisasi Absensi Pegawai</h4>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-semibold px-2 py-0.5 bg-indigo-500/15 text-indigo-400 rounded">Web Portal</span>
+                        <span class="text-xs text-emerald-400"><i class="fa-brands fa-whatsapp"></i> Broadcast Blast</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Aplikasi Kepegawaian + WA Reminder</h3>
+                    <p class="text-slate-400 text-sm mt-2">
+                        <strong>Masalah:</strong> Pegawai sering lupa melakukan absensi masuk/pulang, mengacaukan slip gaji harian.<br>
+                        <strong>Solusi:</strong> Sistem mendeteksi otomatis absensi kosong dan mem-broadcast pengingat via WhatsApp ke masing-masing nomor pegawai yang terlupa secara instan.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-1.5">
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">Fastify.js</span>
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">Next.js</span>
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">Postgres</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Todo List -->
+            <div class="project-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 shadow-lg" data-category="web">
+                <div class="h-48 bg-gradient-to-br from-sky-900/60 to-slate-950 flex items-center justify-center border-b border-slate-800 p-6 relative">
+                    <div class="text-center">
+                        <i class="fa-solid fa-square-check text-5xl text-sky-400 mb-2"></i>
+                        <h4 class="text-sm font-semibold text-slate-400">Manajemen Tugas Efektif</h4>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-semibold px-2 py-0.5 bg-slate-800 text-slate-300 rounded">Produktivitas</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Smart Task Todo App</h3>
+                    <p class="text-slate-400 text-sm mt-2">
+                        <strong>Masalah:</strong> Target-target operasional terlewat akibat hilangnya catatan prioritas.<br>
+                        <strong>Solusi:</strong> Aplikasi to-do list modern berbasis Cloud yang memetakan prioritas, menghitung laju efektivitas penyelesaian tugas, dan mengirim pengingat tenggat waktu.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-1.5">
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">Next.js</span>
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">Tailwind</span>
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">LocalDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Company Profile -->
+            <div class="project-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 shadow-lg" data-category="web">
+                <div class="h-48 bg-gradient-to-br from-purple-900/60 to-slate-950 flex items-center justify-center border-b border-slate-800 p-6 relative">
+                    <div class="text-center">
+                        <i class="fa-solid fa-house-laptop text-5xl text-purple-400 mb-2"></i>
+                        <h4 class="text-sm font-semibold text-slate-400">Digital Lead Generator</h4>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-semibold px-2 py-0.5 bg-indigo-500/15 text-indigo-400 rounded">Landing Page</span>
+                        <span class="text-xs text-slate-500">Optimasi SEO</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Web Company Profile Interaktif</h3>
+                    <p class="text-slate-400 text-sm mt-2">
+                        <strong>Masalah:</strong> Website lama lambat dibuka dan tidak berhasil mendatangkan calon pembeli.<br>
+                        <strong>Solusi:</strong> Website profil perusahaan modern dengan kecepatan muat kurang dari 1 detik, SEO super kuat, dan formulir leads yang langsung terhubung ke email serta WhatsApp tim sales.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-1.5">
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">Nuxt.js</span>
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">Tailwind CSS</span>
+                        <span class="text-[10px] px-2 py-1 bg-slate-800 text-slate-300 rounded font-mono">Vite</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="integration-demo" class="py-20 bg-slate-900/50 border-y border-slate-800/60 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 text-xs sm:text-sm text-emerald-400 font-semibold rounded-full uppercase tracking-wider mb-2">
+                    <i class="fa-brands fa-whatsapp animate-bounce"></i> Cobalah Secara Langsung
+                </div>
+                <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Uji Sistem Otomatisasi Notifikasi WhatsApp</p>
+                <p class="text-slate-400 mt-2 text-sm sm:text-base">Klien Anda menyukai respons instan. Tulis nama Anda di panel kontrol sebelah kiri, pilih skenario transaksi bisnis, lalu lihat layar ponsel sebelah kanan bekerja mengirimkan pesan notifikasi secara real-time!</p>
+                <div class="w-12 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center max-w-5xl mx-auto">
+                
+                <!-- Configurator Panel -->
+                <div class="lg:col-span-5 bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-xl">
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-sliders text-emerald-400"></i> 1. Atur Skenario Pesan
+                    </h3>
+                    
+                    <form id="sim-form" onsubmit="event.preventDefault(); simulateNotif();" class="space-y-4 text-sm">
+                        <div>
+                            <label class="block text-slate-400 font-medium mb-1">Nama Customer (Nama Anda)</label>
+                            <input type="text" id="sim-name" value="Bapak/Ibu Pebisnis Sukses" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-slate-400 font-medium mb-1">Pilih Kasus Pengiriman</label>
+                            <select id="sim-type" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500 transition">
+                                <option value="evaluasi">🎯 Evaluasi Kinerja Otomatis (SDM)</option>
+                                <option value="keuangan">💰 Tagihan Laporan Pembukuan (Keuangan)</option>
+                                <option value="todo">⏰ Pengingat Deadline Tugas Tim (Operasional)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 rounded-lg flex items-center justify-center gap-2 transition duration-300 shadow-lg shadow-emerald-500/20">
+                            <i class="fa-solid fa-paper-plane animate-pulse"></i> Kirim Notifikasi Sekarang
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Phone mockup emulator (Visualizer) -->
+                <div class="lg:col-span-7 flex justify-center">
+                    <div class="relative w-full max-w-sm bg-slate-950 border-[6px] border-slate-800 rounded-[3rem] h-[550px] shadow-2xl flex flex-col overflow-hidden">
+                        
+                        <!-- Phone Notch -->
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-slate-800 rounded-b-2xl z-20 flex items-center justify-center">
+                            <span class="w-2.5 h-2.5 rounded-full bg-slate-900 inline-block mr-2"></span>
+                            <span class="w-12 h-1 bg-slate-900 rounded-full inline-block"></span>
+                        </div>
+
+                        <!-- Phone Status Bar -->
+                        <div class="bg-emerald-900/60 px-6 pt-7 pb-2 flex justify-between items-center text-[10px] text-emerald-200 font-mono">
+                            <span>12:55</span>
+                            <div class="flex items-center gap-1.5">
+                                <i class="fa-solid fa-wifi"></i>
+                                <i class="fa-solid fa-signal"></i>
+                                <i class="fa-solid fa-battery-full"></i>
+                            </div>
+                        </div>
+
+                        <!-- Phone Chat Header -->
+                        <div class="bg-emerald-800 px-4 py-3 border-b border-emerald-900/40 flex items-center gap-3">
+                            <div class="w-9 h-9 bg-emerald-700 rounded-full flex items-center justify-center text-white text-base">
+                                <i class="fa-solid fa-robot text-emerald-200"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Atanasiu Bot-Automate</h4>
+                                <span class="text-[9px] text-emerald-200 flex items-center gap-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                    Sistem Otomatis Aktif
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Chat Area -->
+                        <div id="phone-chat-area" class="flex-1 p-4 overflow-y-auto space-y-4 bg-slate-950 flex flex-col justify-end text-xs font-sans">
+                            <!-- Existing welcome message from bot -->
+                            <div class="flex items-end gap-2 max-w-[85%]">
+                                <div class="bg-slate-800 text-slate-200 px-3.5 py-2.5 rounded-2xl rounded-bl-none">
+                                    <p>Halo! Ini adalah simulasi pengiriman notifikasi langsung dari server ke WhatsApp HP customer Anda. Silakan tekan tombol hijau di sebelah kiri!</p>
+                                    <span class="text-[9px] text-slate-500 block text-right mt-1">12:55</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notification Toast Popup inside Phone (hidden initially) -->
+                        <div id="notif-toast" class="absolute top-16 left-4 right-4 bg-slate-900/95 border border-emerald-500/30 shadow-2xl rounded-2xl p-3.5 flex items-start gap-3 z-30 transition-all duration-500 transform -translate-y-full opacity-0">
+                            <div class="w-10 h-10 bg-emerald-500 rounded-xl flex items-center justify-center text-white text-lg flex-shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex justify-between items-center">
+                                    <h4 class="text-xs font-bold text-white">WhatsApp Bisnis Anda</h4>
+                                    <span class="text-[9px] text-slate-500">Sekarang</span>
+                                </div>
+                                <p id="toast-body-text" class="text-slate-300 text-xs truncate mt-0.5">Menyiapkan pesan otomatis...</p>
+                            </div>
+                        </div>
+
+                        <!-- Mini Custom Alert Box inside Phone -->
+                        <div id="sim-alert-box" class="hidden absolute inset-0 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-6 z-40">
+                            <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl text-center space-y-3 shadow-2xl max-w-[280px]">
+                                <i class="fa-regular fa-bell text-3xl text-emerald-400 animate-bounce"></i>
+                                <h4 class="text-sm font-bold text-white">Sukses Terkirim Tanpa Delay</h4>
+                                <p class="text-xs text-slate-400">Notifikasi otomatis berhasil dikirimkan. Cek layar chat di bawah ini untuk melihat struktur pesan.</p>
+                                <button onclick="closeSimAlert()" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs py-2 px-4 rounded-lg transition w-full">Sangat Menarik!</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs sm:text-sm font-semibold tracking-wider text-indigo-400 uppercase">Hubungi Sekarang</h2>
+            <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Klaim Slot Konsultasi & Blueprint Bisnis Gratis Hari Ini</p>
+            <div class="w-12 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-5xl mx-auto">
+            
+            <!-- Contact Info -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white">Mari Kolaborasikan Ide Besar Anda</h3>
+                    <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                        Punya rencana membuat aplikasi custom? Bingung harus mulai dari mana atau berapa biaya yang realistis? 
+                    </p>
+                    <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                        Tinggalkan pesan di form sebelah kanan. Saya akan menghubungi Anda untuk memberikan <strong>analisis kebutuhan sistem & blueprint alur kerja bisnis secara 100% Gratis</strong> tanpa ikatan kerja sama apapun!
+                    </p>
+                </div>
+
+                <div class="space-y-4 text-sm">
+                    <div class="flex items-center gap-4 bg-slate-900 p-4 rounded-xl border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-lg">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Email Resmi</h4>
+                            <p class="text-white font-medium">atanasiuivannoel@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 bg-slate-900 p-4 rounded-xl border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-lg">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Fast Response (WhatsApp)</h4>
+                            <p class="text-white font-medium">+62 813-xxxx-xxxx</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:col-span-7 bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-xl">
+                <form id="contact-form" onsubmit="event.preventDefault(); submitContact();" class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-slate-400 text-xs font-medium mb-1">Nama Lengkap / Perusahaan</label>
+                            <input type="text" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-slate-400 text-xs font-medium mb-1">Email / Kontak WhatsApp</label>
+                            <input type="text" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 text-xs font-medium mb-1">Target yang Ingin Dicapai (Contoh: "Ingin Buat Aplikasi Kas")</label>
+                        <input type="text" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 text-xs font-medium mb-1">Jelaskan Kendala Bisnis Anda Saat Ini</label>
+                        <textarea rows="4" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition resize-none" placeholder="Misal: Sering salah input kas manual / butuh integrasi notifikasi whatsapp..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3.5 rounded-lg shadow-lg shadow-indigo-600/20 transition duration-300">
+                        Klaim Blueprint & Analisis Sistem Gratis Anda
+                    </button>
+                </form>
+                
+                <!-- Success State (hidden initially) -->
+                <div id="contact-success" class="hidden text-center py-6 space-y-3">
+                    <div class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto text-xl">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white">Permintaan Analisis Sistem Diterima!</h4>
+                    <p class="text-sm text-slate-400 max-w-md mx-auto">Terima kasih atas kepercayaan Anda. Saya akan mempelajari deskripsi kendala Anda dan mengirimkan rancangan solusi awal melalui Email/WhatsApp dalam waktu 1x24 jam.</p>
+                    <button onclick="resetContactForm()" class="text-xs text-indigo-400 hover:underline">Kirim penawaran sistem lainnya</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-slate-800 py-10 mt-20 text-center text-xs sm:text-sm text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <p class="font-bold text-slate-400">Atanasiu Ivannoel Rio Aji, S.Kom</p>
+            <p>Penyedia Jasa Custom Mobile App & Web Solusi Bisnis Berbasis Sidoarjo, Jawa Timur.</p>
+            <p>© 2026 Atanasiu.dev. Seluruh hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hide mobile menu on link click
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Filter Projects
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.project-filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-indigo-600', 'text-white');
+                btn.classList.add('bg-slate-800', 'text-slate-300', 'hover:text-white');
+            });
+
+            const activeBtn = Array.from(buttons).find(btn => {
+                if(category === 'all') return btn.innerText.includes('Semua');
+                if(category === 'mobile') return btn.innerText.includes('Mobile');
+                if(category === 'web') return btn.innerText.includes('Web');
+            });
+            if (activeBtn) {
+                activeBtn.classList.add('bg-indigo-600', 'text-white');
+                activeBtn.classList.remove('bg-slate-800', 'text-slate-300', 'hover:text-white');
+            }
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // WhatsApp Notif Simulator Logics
+        function simulateNotif() {
+            const name = document.getElementById('sim-name').value || 'Pelanggan Sukses';
+            const type = document.getElementById('sim-type').value;
+            const chatArea = document.getElementById('phone-chat-area');
+            const toast = document.getElementById('notif-toast');
+            const toastBodyText = document.getElementById('toast-body-text');
+            const alertBox = document.getElementById('sim-alert-box');
+
+            let message = '';
+            let subtitle = '';
+
+            switch(type) {
+                case 'evaluasi':
+                    message = `Halo Kak *${name}*,\n\nSistem HR Anda melaporkan bahwa Evaluasi Kinerja Karyawan kuartal ini resmi dibuka.\n\nSilakan klik tautan di aplikasi Anda untuk mengisi performa tim demi meningkatkan produktivitas kantor.\n\n*Atanasiu Auto-System*`;
+                    subtitle = "🎯 Evaluasi HR Otomatis Dimulai";
+                    break;
+                case 'keuangan':
+                    message = `Halo Kak *${name}*,\n\nTerima kasih atas dukungan Anda. Rekonsiliasi keuangan kas donasi Seminari bulan ini telah terbit dan siap diunduh.\n\nLaporan terlampir aman terenkripsi di web internal Anda.\n\n*Atanasiu Auto-System*`;
+                    subtitle = "💰 Laporan Donasi Berhasil Direkonsiliasi";
+                    break;
+                case 'todo':
+                    message = `Halo Kak *${name}*,\n\n*Pengingat Cepat*: Hari ini ada 2 target pekerjaan tim Anda yang mendekati deadline. Ayo selesaikan tepat waktu untuk menjaga skor produktivitas tim tetap maksimal!\n\n*Atanasiu Auto-System*`;
+                    subtitle = "⏰ Pengingat: Kerjaan Tim Menunggu";
+                    break;
+            }
+
+            // Trigger Notification Tone (Simple Web Audio API Synth)
+            try {
+                const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                
+                const osc1 = audioCtx.createOscillator();
+                const osc2 = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                
+                osc1.type = 'sine';
+                osc1.frequency.setValueAtTime(880, audioCtx.currentTime); 
+                osc2.type = 'sine';
+                osc2.frequency.setValueAtTime(1174.66, audioCtx.currentTime); 
+
+                gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);
+
+                osc1.connect(gain);
+                osc2.connect(gain);
+                gain.connect(audioCtx.destination);
+
+                osc1.start();
+                osc2.start();
+                osc1.stop(audioCtx.currentTime + 0.3);
+                osc2.stop(audioCtx.currentTime + 0.3);
+            } catch(e) {
+                console.log("AudioContext not supported or active yet on user interaction.");
+            }
+
+            // 1. Show Toast at top of Phone
+            toastBodyText.innerText = `${subtitle}`;
+            toast.classList.remove('-translate-y-full', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            // 2. Hide Toast after 3 seconds
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('-translate-y-full', 'opacity-0');
+            }, 3000);
+
+            // 3. Create bubble in chat
+            setTimeout(() => {
+                const now = new Date();
+                const timeString = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
+                
+                const newBubble = document.createElement('div');
+                newBubble.className = "flex items-end gap-2 max-w-[85%] self-end";
+                newBubble.innerHTML = `
+                    <div class="bg-emerald-800 text-white px-3.5 py-2.5 rounded-2xl rounded-br-none shadow-md">
+                        <p class="whitespace-pre-line">${message.replace(/\*/g, '')}</p>
+                        <span class="text-[9px] text-emerald-200 block text-right mt-1">${timeString} <i class="fa-solid fa-check-double text-sky-300"></i></span>
+                    </div>
+                `;
+                chatArea.appendChild(newBubble);
+                chatArea.scrollTop = chatArea.scrollHeight;
+
+                alertBox.classList.remove('hidden');
+            }, 600);
+        }
+
+        function closeSimAlert() {
+            document.getElementById('sim-alert-box').classList.add('hidden');
+        }
+
+        // Contact Form Handlers
+        function submitContact() {
+            document.getElementById('contact-form').classList.add('hidden');
+            document.getElementById('contact-success').classList.remove('hidden');
+        }
+
+        function resetContactForm() {
+            document.getElementById('contact-form').reset();
+            document.getElementById('contact-form').classList.remove('hidden');
+            document.getElementById('contact-success').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
